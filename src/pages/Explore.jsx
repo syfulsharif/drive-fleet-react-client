@@ -124,7 +124,7 @@ export default function Explore() {
                 <h3 className="text-xl font-serif text-white mb-4 line-clamp-1">{car.title}</h3>
                 
                 <div className="mt-auto flex justify-between items-end pt-4">
-                  <p className="text-2xl text-white font-serif tracking-tight">${car.pricePerDay} <span className="text-sm font-sans tracking-normal opacity-50">/day</span></p>
+                  <p className="text-2xl text-white font-serif tracking-tight">৳{car.pricePerDay} <span className="text-sm font-sans tracking-normal opacity-50">/day</span></p>
                   <p className="text-[10px] text-[#d4af37] uppercase tracking-tighter shadow-sm">{car.bookingCount} Trips</p>
                 </div>
               </div>
@@ -155,7 +155,7 @@ export default function Explore() {
               
               <div className="flex items-end justify-between mb-8 pb-8 border-b border-white/10">
                  <p className="text-xs text-[#71717a] uppercase tracking-widest">Daily Rate</p>
-                 <p className="text-3xl font-serif text-white">${selectedCar.pricePerDay}</p>
+                 <p className="text-3xl font-serif text-white">৳{selectedCar.pricePerDay}</p>
               </div>
 
               <form onSubmit={handleBooking} className="space-y-6">
