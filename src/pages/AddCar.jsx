@@ -62,7 +62,7 @@ export default function AddCar() {
         </div>
 
         <div>
-          <label className="block text-[10px] uppercase tracking-widest text-[#71717a] mb-2">Price Per Day ($)</label>
+          <label className="block text-[10px] uppercase tracking-widest text-[#71717a] mb-2">Price Per Day (BDT)</label>
           <input required type="number" min="0" value={formData.pricePerDay} onChange={e => setFormData({...formData, pricePerDay: e.target.value})} className="w-full bg-[#111113] border border-white/10 text-white px-4 py-3 text-sm focus:outline-none focus:border-[#d4af37]/50" />
         </div>
 
