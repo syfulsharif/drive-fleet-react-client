@@ -29,3 +29,4 @@ api.interceptors.response.use(
 // Environment config
 // API timeout
 // Request headers
+// CORS setup
