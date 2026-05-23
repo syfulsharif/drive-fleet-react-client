@@ -154,7 +154,7 @@ export default function Explore() {
               <p className="text-sm text-[#a1a1a6] leading-relaxed mb-8">{selectedCar.description}</p>
               
               <div className="flex items-end justify-between mb-8 pb-8 border-b border-white/10">
-                 <p className="text-xs text-[#71717a] uppercase tracking-widest">Daily Rate</p>
+                 <p className="text-xs text-[#71717a] uppercase tracking-widest">Daily Rate (BDT)</p>
                  <p className="text-3xl font-serif text-white">৳{selectedCar.pricePerDay}</p>
               </div>
 
