@@ -28,3 +28,4 @@ api.interceptors.response.use(
 );// Optimized imports
 // Environment config
 // API timeout
+// Request headers
