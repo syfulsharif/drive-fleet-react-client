@@ -11,6 +11,9 @@ build/
 .env.production
 .env.*.local
 
+# Netlify
+.netlify/
+
 # Vercel
 .vercel/
 
