@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm rebuild @tailwindcss/oxide || true && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
