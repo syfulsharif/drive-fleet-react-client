@@ -1,10 +1,14 @@
 import axios from 'axios';
 
-// Always use relative path - Netlify redirects /api/* to backend
-const baseURL = '/api';
+// In dev: Vite proxy handles /api -> localhost:3000
+// In production: use full backend URL directly
+const isDev = import.meta.env.DEV;
+const baseURL = isDev
+  ? '/api'
+  : 'https://drivefleet-backend-23052026.vercel.app/api';
 
 export const api = axios.create({
-  baseURL: baseURL.replace(/\/$/, ''), // Remove trailing slash to avoid double slashes
+  baseURL,
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
