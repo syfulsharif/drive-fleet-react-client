@@ -30,3 +30,4 @@ api.interceptors.response.use(
 // API timeout
 // Request headers
 // CORS setup
+// Response handling
